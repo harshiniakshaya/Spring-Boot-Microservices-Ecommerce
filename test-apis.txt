@@ -1,0 +1,19 @@
+In MYSql Workbench:
+    create database product_db_m;
+    create database order_db_m;
+
+Postman
+GET localhost:8000/products
+GET localhost:8000/products/1
+POST localhost:8000/products
+    BODY: {
+              "name":"Pencil",
+              "price":5
+          }
+
+GET localhost:8000/orders
+POST localhost:8000/orders/placeorder
+    BODY: {
+              "productId":4,
+              "quantity":50
+          }
